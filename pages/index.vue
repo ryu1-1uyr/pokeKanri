@@ -22,15 +22,16 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Logo from '~/components/Logo.vue'
 
 @Component({
   components: {
-    Logo: () => import('~/components/Logo.vue')
+    Logo
   }
 })
 export default class Index extends Vue {
-  age = 1
-  onClickButton () {
+  age: number = 1
+  onClickButton (): void {
     this.age += 1
   }
 }
