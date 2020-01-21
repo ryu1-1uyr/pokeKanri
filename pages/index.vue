@@ -1,26 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo />
-      <p>{{ age }}</p>
-      <button @click="onClickButton">
-        Click Me!
-      </button>
-      <button @click="pokemonLog">
-        poke
-      </button>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
+      <myTest />
     </div>
   </section>
 </template>
@@ -28,11 +9,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Logo from '~/components/Logo.vue'
+import myTest from '~/components/myTest.vue'
 // const Pokedex = require('pokedex.js')
 
 @Component({
   components: {
-    Logo
+    Logo,
+    myTest
   }
 })
 export default class Index extends Vue {
@@ -43,7 +26,7 @@ export default class Index extends Vue {
   }
 
   pokemonLog (): void {
-    console.log(this.$pokemon.id(25).get())
+    console.log(this.$pokemon.name('ピカチュウ').get())
   }
 }
 </script>
