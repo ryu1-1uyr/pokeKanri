@@ -6011,6 +6011,11 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
+pokedex.js@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/pokedex.js/-/pokedex.js-3.2.0.tgz#130cbb4d198c9d855a0c634d8f55ce380fa0e8b5"
+  integrity sha512-hHo0yFJrtL23gvlsu6gHnbgnywql5dtsXLi3mCjlkY0aIcDvDSdmw7jHD8JxoBNPRrlLqOVGU5Y/4/uXfziq8g==
+
 popper.js@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.0.tgz#2e1816bcbbaa518ea6c2e15a466f4cb9c6e2fbb3"
